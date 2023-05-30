@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+@media(min-width:320px){
+	.container{
+		width:100%;
+		margin:auto;
+	}
+	.row{
+		display:flex;
+	}
+	.col{
+		width:100%;  
+	}
+}
+@media(min-width:620px){
+	.container{
+		width:95%;
+		margin:auto;
+	}
+	.row{
+		display:flex;
+	}
+	.col{
+		width:33.3%;  
+	}
+}
+@media(min-width:1000px){
+	.container{
+		width:85%;
+		margin:auto;
+	}
+	.row{
+		display:flex;
+	}
+	.col{
+		width:33.3%;  
+	}
+}	
+#filters{
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+}
+.port-sec{
+	padding:60px 0;
+}
+.port-sec h1{
+	font-family: 'Poppins', sans-serif;
+}
+.list li{
+	cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+	background-color:orange;
+	
+}
+.filter li{
+	justify-content:center;
+}
+h1{
+	text-align:center;
+	margin-bottom:17px;
+	font-size:30px;
+	font-weight:600;
+}
+
+.item img{
+	width:100%;
+}
+.gal-card{
+	padding-right:12px;
+	padding-left:12px;
+	padding-bottom:20px;
+	
+}
+.item{
+	position:relative;
+    overflow:hidden;	
+}
+.port-info{
+	position:absolute;
+	height:inherit;
+	opacity:0;
+	width:100%;
+	bottom:15px;
+	top:0;
+	right:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	color:#fff;
+	background-color:#0000005e;
+}
+.item:hover .port-info{
+	opacity:1;
+	left:0;
+	bottom:0;
+	z-index:3; 
+}
+.item:hover img{
+	transform:scale(1.1);
+}
+.item img{
+	transform:all 0.3s ease;
+}
+.port-head{
+	font-size:16px;
+	padding-left:12px;
+	padding-bottom:12px;
+}
+.port-icon{
+	   font-size:22px;
+}
+ 
